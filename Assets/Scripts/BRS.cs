@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class BRS : Singleton<BRS>
 {
-    private static string BUILDS_PATH = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\Brickadia\\Saved\\Builds\\";
+    public static string BUILDS_PATH = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\Brickadia\\Saved\\Builds\\";
     private static byte[] MAGIC = { (byte)'B', (byte)'R', (byte)'S' };
 
     [ReadOnly]
@@ -39,6 +39,11 @@ public class BRS : Singleton<BRS>
 
     public Texture2D GetPreview()
     {
+        if(image == null)
+        {
+            ReadScreenshot();
+        }
+
         return image;
     }
 
@@ -48,7 +53,7 @@ public class BRS : Singleton<BRS>
         DestroyImmediate(bricks);
     }
 
-    public void LoadBRS()
+    public void LoadBRS(bool SpawnBricks = true)
     {
         Debug.Log("loadBRS()");
         ClearBricks();
@@ -72,7 +77,9 @@ public class BRS : Singleton<BRS>
         ReadHeader1();
         ReadHeader2();
         ReadScreenshot();
-        ReadBricks();
+
+        if(SpawnBricks)
+            ReadBricks();
     }
 
     private void ReadPreamble()

@@ -343,81 +343,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &174500511
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 174500512}
-  - component: {fileID: 174500514}
-  - component: {fileID: 174500513}
-  m_Layer: 0
-  m_Name: LoadBackground
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &174500512
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 174500511}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 268347475}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &174500513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 174500511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &174500514
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 174500511}
-  m_CullTransparentMesh: 1
 --- !u!1 &197411420
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,8 +534,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 174500512}
+  m_Children: []
   m_Father: {fileID: 4696855578736736}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -715,268 +639,6 @@ Transform:
   - {fileID: 1513559363}
   m_Father: {fileID: 2915588}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &424370828
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 424370830}
-  - component: {fileID: 424370829}
-  m_Layer: 0
-  m_Name: BRS Loader
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
-  m_IsActive: 1
---- !u!114 &424370829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424370828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 564846273ffff88458ed56596a969c32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _persistent: 1
-  path: C:\Users\Hydro\AppData\Local\Brickadia\Saved\Builds\Brickadia City.brs
-  brsVersion: 8
-  gameVersion: 6094
-  map: Plate
-  author: Bricktronic
-  description: 
-  brickCount: 2490400
-  buildName: Brickadia City
-  brickAssets:
-  - PB_DefaultBrick
-  - B_1x1F_Octo
-  - PB_DefaultTile
-  - B_1x_Octo
-  - B_1x1F_Round
-  - PB_DefaultRampInverted
-  - PB_DefaultWedge
-  - PB_DefaultRampCrestEnd
-  - B_1x1_Round
-  - B_2x2F_Octo_Converter
-  - B_Swirl_Plate
-  - B_Flower
-  - B_2x2F_Round
-  - PB_DefaultMicroWedgeTriangleCorner
-  - PB_DefaultMicroWedge
-  - PB_DefaultMicroBrick
-  - PB_DefaultSideWedge
-  - B_Hedge_1x1_Corner
-  - PB_DefaultRampCrest
-  - PB_DefaultRamp
-  - B_2x2f_Plate_Center
-  - PB_DefaultSmoothTile
-  - B_2x_Octo_Cone
-  - B_1x1_Cone
-  - PB_DefaultSideWedgeTile
-  - B_Handle
-  - B_2x2_Corner
-  - B_2x2F_Octo_Converter_Inv
-  - B_Rook
-  - B_Turkey_Leg
-  - B_8x8_Lattice_Plate
-  - B_Chalice
-  - B_1x1_Brick_Side_Lip
-  - B_1x2f_Plate_Center
-  - B_1x1_Brick_Side
-  - B_1x2f_Plate_Center_Inv
-  - B_Leaf_Bush
-  - B_Cauldron
-  - PB_DefaultMicroWedgeCorner
-  - B_2x4_Door_Frame
-  - PB_DefaultMicroWedgeOuterCorner
-  - PB_DefaultMicroWedgeInnerCorner
-  - B_Jar
-  - B_2x2F_Octo
-  - B_2x2_Round
-  - B_2x2_Cone
-  - B_Small_Flower
-  - B_SpawnPoint
-  - B_1x2_Overhang
-  - B_Fern
-  - B_Branch
-  - B_Pawn
-  - B_Bishop
-  - B_Hedge_1x1
-  - PB_DefaultRampCornerInverted
-  - B_Turkey_Body
-  - B_2x_Octo
-  - B_2x2_Overhang
-  - B_Inverted_Cone
-  - B_Bush
-  - B_Pumpkin
-  - B_Sausage
-  - B_Flame
-  - B_Queen
-  - PB_DefaultRampCrestCorner
-  - PB_DefaultRampCorner
-  - B_4x4_Round
-  - B_Bone
-  - B_Pine_Tree
-  - B_1x_Octo_90Deg
-  - B_1x_Octo_T_Inv
-  - B_BoneStraight
-  - B_King
-  - B_2x2f_Plate_Center_Inv
-  - B_1x_Octo_90Deg_Inv
-  - B_Knight
-  - B_1x_Octo_T
-  - PB_DefaultRampInnerCorner
-  - B_Hedge_1x2
-  - B_Hedge_1x4
-  - PB_DefaultRampInnerCornerInverted
-  - B_2x_Octo_90Deg_Inv
-  - B_2x_Octo_90Deg
-  - B_Picket_Fence
-  materials:
-  - BMC_Ghost
-  - BMC_Ghost_Fail
-  - BMC_Plastic
-  - BMC_Glow
-  - BMC_Metallic
-  - BMC_Hologram
-  colors:
-  - serializedVersion: 2
-    rgba: 4294967295
-  - serializedVersion: 2
-    rgba: 4290888129
-  - serializedVersion: 2
-    rgba: 4288651167
-  - serializedVersion: 2
-    rgba: 4286743170
-  - serializedVersion: 2
-    rgba: 4284966759
-  - serializedVersion: 2
-    rgba: 4282992969
-  - serializedVersion: 2
-    rgba: 4280953386
-  - serializedVersion: 2
-    rgba: 4278190080
-  - serializedVersion: 2
-    rgba: 4281607837
-  - serializedVersion: 2
-    rgba: 4280953589
-  - serializedVersion: 2
-    rgba: 4280979963
-  - serializedVersion: 2
-    rgba: 4280995317
-  - serializedVersion: 2
-    rgba: 4280730161
-  - serializedVersion: 2
-    rgba: 4292200993
-  - serializedVersion: 2
-    rgba: 4288440273
-  - serializedVersion: 2
-    rgba: 4286532512
-  - serializedVersion: 2
-    rgba: 4278985042
-  - serializedVersion: 2
-    rgba: 4282339193
-  - serializedVersion: 2
-    rgba: 4280370847
-  - serializedVersion: 2
-    rgba: 4283139525
-  - serializedVersion: 2
-    rgba: 4287081426
-  - serializedVersion: 2
-    rgba: 4288073471
-  - serializedVersion: 2
-    rgba: 4286829026
-  - serializedVersion: 2
-    rgba: 4285978623
-  - serializedVersion: 2
-    rgba: 4280699686
-  - serializedVersion: 2
-    rgba: 4279590950
-  - serializedVersion: 2
-    rgba: 4278216785
-  - serializedVersion: 2
-    rgba: 4278227968
-  - serializedVersion: 2
-    rgba: 4281826874
-  - serializedVersion: 2
-    rgba: 4282226572
-  - serializedVersion: 2
-    rgba: 4281845759
-  - serializedVersion: 2
-    rgba: 4280715694
-  - serializedVersion: 2
-    rgba: 4285685815
-  - serializedVersion: 2
-    rgba: 4285492576
-  - serializedVersion: 2
-    rgba: 4289044879
-  - serializedVersion: 2
-    rgba: 4292597437
-  - serializedVersion: 2
-    rgba: 4291872663
-  - serializedVersion: 2
-    rgba: 4293244209
-  - serializedVersion: 2
-    rgba: 4290218240
-  - serializedVersion: 2
-    rgba: 4287194636
-  - serializedVersion: 2
-    rgba: 3410117375
-  - serializedVersion: 2
-    rgba: 3408324607
-  - serializedVersion: 2
-    rgba: 3410740577
-  - serializedVersion: 2
-    rgba: 3420438386
-  - serializedVersion: 2
-    rgba: 3409192605
-  - serializedVersion: 2
-    rgba: 3408564731
-  - serializedVersion: 2
-    rgba: 3410260529
-  - serializedVersion: 2
-    rgba: 3422552063
-  - serializedVersion: 2
-    rgba: 3422552063
-  - serializedVersion: 2
-    rgba: 3418472897
-  - serializedVersion: 2
-    rgba: 3416235935
-  - serializedVersion: 2
-    rgba: 3414327938
-  - serializedVersion: 2
-    rgba: 3412551527
-  - serializedVersion: 2
-    rgba: 3410577737
-  - serializedVersion: 2
-    rgba: 3408538154
-  - serializedVersion: 2
-    rgba: 3405774848
-  physMats:
-  - BPMC_Default
-  baseMat: {fileID: 2100000, guid: 3127608175e81164f931330181863989, type: 2}
-  generateColliders: 1
-  chunksPerFrame: 4
---- !u!4 &424370830
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424370828}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.167164, y: 55.841164, z: -119.44087}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &492366342
 GameObject:
@@ -1818,8 +1480,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 0}
-  isGlobal: 0
+  sharedProfile: {fileID: 11400000, guid: 21257786cbba1c14fb38223598f5ef87, type: 2}
+  isGlobal: 1
   blendDistance: 0
   weight: 1
   priority: 0
@@ -2107,6 +1769,96 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201852882}
   m_Mesh: {fileID: 5791534410608828873, guid: c3e0d7e4cb2f8c4418b19c24cfaa7f2e, type: 3}
+--- !u!1 &1256488386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1256488389}
+  - component: {fileID: 1256488388}
+  - component: {fileID: 1256488387}
+  m_Layer: 0
+  m_Name: Game Scripts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1256488387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256488386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c69c8fe6cd16a5b4d93b9ef11770784a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIBinds:
+  - UIPrefab: {fileID: 5371843782961160660, guid: 55e778fdf8d7d294cb1d16d479ae43ea,
+      type: 3}
+    ReturnIndex: -1
+    ToggleKeybinds: 6c000000
+    KeepCursorVisible: 1
+    CloseOtherUI: 1
+    Instantiated: {fileID: 0}
+  - UIPrefab: {fileID: 2154160796259988230, guid: a2507867aad0ebe44904fec6c6f1a9a3,
+      type: 3}
+    ReturnIndex: -1
+    ToggleKeybinds: 1b000000
+    KeepCursorVisible: 1
+    CloseOtherUI: 1
+    Instantiated: {fileID: 0}
+  UICanvas: {fileID: 268347474}
+  AutoLockCursor: 1
+  CloseNewestUI: 27
+--- !u!114 &1256488388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256488386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564846273ffff88458ed56596a969c32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _persistent: 1
+  path: 
+  brsVersion: 0
+  gameVersion: 0
+  map: 
+  author: 
+  description: 
+  brickCount: 0
+  buildName: 
+  brickAssets: []
+  materials: []
+  colors: []
+  physMats: []
+  baseMat: {fileID: 2100000, guid: 3127608175e81164f931330181863989, type: 2}
+  generateColliders: 1
+  chunksPerFrame: 10
+--- !u!4 &1256488389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256488386}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.199148, y: 20.444477, z: -35.51631}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1488080525
 GameObject:
   m_ObjectHideFlags: 0
@@ -2323,7 +2075,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1498119977
 Transform:
   m_ObjectHideFlags: 0
@@ -2769,7 +2521,7 @@ Transform:
   m_LocalScale: {x: 10000, y: 1, z: 10000}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2116952240
 MonoBehaviour:
